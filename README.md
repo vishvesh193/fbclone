@@ -1,4 +1,4 @@
-1. Open the terminal in Visual Studio
+1.Open the terminal in Visual Studio
 
 2. Write the following command :
 
