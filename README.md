@@ -9,7 +9,7 @@ After setting up the environment, write
 
 npm start 
 
-to run the app. Make sure you are in the correct directory (cd fb-clone).
+to run the app. Make sure you are in the correct directory ( cd fb-clone ).
 
 3.For the firewall open another terminal and write the command:
 
