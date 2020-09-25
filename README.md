@@ -1,6 +1,6 @@
-1.Open the terminal in Visual Studio
+1. Open the terminal in Visual Studio
 
-2.Write the following command :
+2. Write the following command :
 
 npx create-react-app fb-clone
 
@@ -11,6 +11,6 @@ npm start
 
 to run the app. Make sure you are in the correct directory ( cd fb-clone ).
 
-3.For the firewall open another terminal and write the command:
+3. For the firewall open another terminal and write the command:
 
 npm i firewall
