@@ -3,16 +3,25 @@ import './MessageSender.css'
 import { Avatar } from '@material-ui/core'
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import { useStateValue } from './StateProvider';
-
+import firebase from 'firebase'
+import db from './firebase'
 
 export default function MessageSender() {
 
     const [ { user }, dispatch] = useStateValue();
     
     const [input,setInput]=useState("");
-    const handleSubmit = e => {
+    const handleSubmit = (e) => {
     
         e.preventDefault();
+
+        db.collection('posts').add({
+            message : input,
+            timestamp : firebase.firestore.FieldValue.serverTimestamp(),
+            profilePic : user.photoURL,
+            username : user.displayName,
+
+        })
         setInput("");
     };
 
@@ -20,6 +29,7 @@ export default function MessageSender() {
         <div className="messageSender">
             <div className="messageSender__top">
                 <Avatar src={user.photoURL}/>
+                
                 <form>
 
                     <input 
