@@ -4,8 +4,7 @@
     position: fixed;
     flex: 0.33;
     padding: 25px 10px;    
-    
-    
+    max-width: 280px;
    
 /*background-color: white;*/
     
