@@ -2,10 +2,11 @@ import React from 'react'
 import './Post.css'
 import { Avatar } from '@material-ui/core'
 /*import {ExpandMoreOutlined} from '@material-ui/icons'*/
+/* <p>{new Date(timestamp?.toDate()).toUTCString()}</p> */
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
 import NearMeIcon from '@material-ui/icons/NearMe';
-function Post({profilePic,image,username,timestamp,message}) {
+function Post({profilePic,image,username,message,timestamp}) {
     return (
         <div className="post">
             <div className="post__top">
@@ -13,7 +14,7 @@ function Post({profilePic,image,username,timestamp,message}) {
                 className="post__avatar" />
                 <div className="post__topInfo">
                     <h3>{username}</h3>
-                    <p>Timestamp..</p>
+                    <p>{new Date(timestamp?.toDate()).toLocaleString()}</p>
                 </div>    
             </div>
 
