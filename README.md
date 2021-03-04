@@ -11,6 +11,10 @@ npm start
 
 to run the app. Make sure you are in the correct directory ( cd fb-clone ).
 
+OR download the node modules by
+
+npm install
+
 3.For the firewall open another terminal and write the command:
 
 npm i firewall
